@@ -4,6 +4,8 @@
 4. KoBERT_4_labels
 5. emotion_base_recomnnedation
 
+<br>
+
 # 0. Introdunction
 
 - colab 환경에서 진행되었습니다
@@ -43,10 +45,26 @@
   -     슬픔 : 2
   -     행복 : 3
 
+## 2) Split Data to Train & Test
+
+- 총 61,699행의 전체 데이터 중 20%를 test 데이터로 분리해주었습니다
+
+## 3) Load Tokenizer & Apply on Train Data
+
+- 전체 데이터 중 문장길이 상위 5개를 토큰화한 결과, 토큰 최댓값이 292임에 따라 임의값인 300을 sequence의 최대길이로 설정하였습니다
+
+- encode_plus 함수를 이용해 train data를 BERT input 형태(tokens_tensor, segments_tensor, masks_tensor)로 만들어주었습니다
 
 <br>
 
-# 2. Modeling
+# 2. Modeling<br>
+
+## 1) Create Model
+
+
+## 2) TPU setting before Training
+
+## 3) Train
 
 <br>
 
