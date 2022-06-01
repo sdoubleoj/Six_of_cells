@@ -37,13 +37,13 @@
   - 행복       11615
   - 슬픔       10087
 
-<img width=40% height=40% src="https://user-images.githubusercontent.com/78069770/171363414-a8871cfb-31a0-4bee-b3f7-9e323c854fe5.png">
+<img width="40%" height="40%" src="https://user-images.githubusercontent.com/78069770/171363414-a8871cfb-31a0-4bee-b3f7-9e323c854fe5.png">
 
 - Digitizing Label<br>
   - 분노+혐오 : 0 
   - 놀람+공포 : 1
-  -     슬픔 : 2
-  -     행복 : 3
+  - 슬픔 : 2
+  - 행복 : 3
 
 ## 2) Split Data to Train & Test
 
@@ -60,7 +60,7 @@
 # 2. Modeling<br>
 
 ## 1) Create Model<br>
-<img weight=40% height=40% src="https://user-images.githubusercontent.com/78069770/171365220-137bec78-48b0-4220-8b7d-66f9d5595f30.png">
+<img width="80%" height="80%" src="https://user-images.githubusercontent.com/78069770/171365220-137bec78-48b0-4220-8b7d-66f9d5595f30.png">
 
 - overfitting으로 Dropout(0.2)를 추가해주었습니다
 - optimizer는 RectifiedAdam, Crossentropy과 Accuracy는 모두 SparseCategorical를 사용했습니다
@@ -94,14 +94,14 @@
 # 4. Test
 - test data 또한 input 형태로 전처리한 후, Checkpoint로 저장된 모델을 load해 테스트를 진행했습니다
 - Result
-  - Accuracy : 0.7503
-  - Classification Report
-    <img src="https://user-images.githubusercontent.com/78069770/171368266-c7752f90-9d00-4299-b9cd-152180bebc5e.png"> 
+  - **Accuracy** : 0.7503
+  - **Classification Report** <br>
+    <img width="80%" height="80%" src="https://user-images.githubusercontent.com/78069770/171368266-c7752f90-9d00-4299-b9cd-152180bebc5e.png"> 
 
 <br>
 
 # 5. Save Model
-
+- 추후 분석에 이용하기 위해 pickle 파일로 저장했습니다
 
 <br>
 
